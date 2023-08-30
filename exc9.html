@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lista de alunos</h1>
+
+    <button class="bnt" onclick="addalunos()">cadastrar aluno</button>
+
+    <button class="bnt" onclick="doma()">Ver todos os alunos</button>
+
+    <script>
+        let ma = [];
+        function addalunos(){
+            let mu = prompt('cadastrar aluno');
+            alert('Você cadastrou '+ mu +' a sua lista de alunos.');
+            let ida = parseInt(prompt('qual a idade do aluno?'));
+            ma.push(mu +  ' tem '+ ida + ' anos. ' +'\n' )
+        }
+        function doma(){
+           
+            alert('Seus alunos são: \n '+ ma );
+            
+        }
+        if(ida < 0 || ida > 125){
+            alert('insira uma idade Valida')
+        }
+
+    </script>
+
+</body>
+</html>
